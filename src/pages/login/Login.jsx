@@ -10,11 +10,10 @@ export const Login = () => {
       <main className={style.main}>
         <section className={style.leftContainer}>
           <article className={style.header}>
-            <figure className={style.imageContainer}>
-              <img 
-                src={glass} 
-                className={style.image}/>
-            </figure>
+            <img 
+              src={glass} 
+              className={style.image}/>
+
             <h1 
               className={style.title}
             >
@@ -27,7 +26,7 @@ export const Login = () => {
               <a 
                 className={style.link}
                 href="/register"
-              >Registrarse</a>
+              > Registrarse</a>
             </p>
           </article>
           <article className={style.formContainer}>

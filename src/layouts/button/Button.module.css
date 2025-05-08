@@ -9,9 +9,23 @@
   font-weight: 450;
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
+  transition-duration: 500ms;
 }
 
 .button:hover{
   background-color: var(--color-secondary);
   cursor: pointer;
 }
+
+@container (max-width: 250px) {
+  .button {
+    font-size: 16px;
+  }
+}
+
+@container (max-width: 120px) {
+  .button{
+    font-size: 15px;
+  }
+}
+

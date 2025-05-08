@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 60%;
   height: 100%;
   gap: 2rem;
 }
@@ -20,13 +20,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.1rem;
   width: 100%;
+}
+
+.image{
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition-duration: 500ms;
+
 }
 
 .title{
   font-size: 64px;
   font-weight: 700;
   color: var(--color-primary);
+  transition-duration: 500ms;
 }
 
 .text{
@@ -34,6 +45,8 @@
   font-size: 20px;
   font-weight: 400;
   color: #000;
+  transition-duration: 500ms;
+
 }
 
 .link{
@@ -57,4 +70,129 @@
   flex-direction: column;
   width: 60%;
   gap: 1rem;
+}
+
+.rightContainer{
+  width: 40%;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.rightImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 951px) {
+  .title{
+    font-size: 48px;
+  }
+
+  .text{
+    font-size: 18px;
+  }
+
+  .link{
+    font-size: 18px;
+  }
+
+  .image{
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .title{
+    font-size: 36px;
+  }
+
+  .text{
+    font-size: 16px;
+  }
+
+  .link{
+    font-size: 16px;
+  }
+
+  .image{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+@media (max-width: 566px){
+  .title{
+    font-size: 28px;
+  }
+
+  .text{
+    font-size: 14px;
+  }
+
+  .link{
+    font-size: 14px;
+  }
+
+  .image{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+@media (max-width: 425px){
+  .main{
+    display: flex;
+    flex-direction:column-reverse;
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .leftContainer{
+    width: 100%;
+    height: 75%;
+    align-items: center;
+    justify-content:start;
+    padding-top: 5rem;
+  }
+
+  .image{
+    width: 123px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .title{
+    font-size: 36px;
+  }
+
+  .text{
+    font-size: 13px;
+  }
+
+  .link{
+    font-size: 13px;
+  }
+
+  .form{
+    width: 75%;
+  }
+
+  .rightContainer{
+    width: 100%;
+    height: 25%;
+  }
 }
