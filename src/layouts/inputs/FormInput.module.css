@@ -7,8 +7,25 @@
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 450;
   font-size: 20px;
+  transition-duration: 500ms;
 }
 
 .formInput::placeholder{
   color: #13264495;
+  font-size: 20px;
+  transition-duration: 500ms;
+
 }
+
+@media (max-width: 768px) {
+  .formInput::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .formInput::placeholder {
+    font-size: 15px;
+  }
+}
+

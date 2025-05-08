@@ -1,14 +1,54 @@
 import {Button} from '@/layouts/button/Button'
 import {FormInput} from '@/layouts/inputs/FormInput'
+import glass from '@/assets/glass.png'
+import image from '@/assets/loginImage.png'
+import style from './Login.module.css'
+
+
 export const Login = () => {
     return (
-        <div>
-            <h1>Login</h1>
-            <form>
-                <FormInput placeholder="Username" id="username" />
-                <FormInput placeholder="Password" id="password" />
-                <Button text="Continuar" onClick={() => {}} />
+      <main className={style.main}>
+        <section className={style.leftContainer}>
+          <article className={style.header}>
+            <img 
+              src={glass} 
+              className={style.image}/>
+
+            <h1 
+              className={style.title}
+            >
+              INICIAR SESIÓN
+            </h1>
+            <p
+              className={style.text}
+            >
+              ¿No tienes una cuenta? 
+              <a 
+                className={style.link}
+                href="/register"
+              > Registrarse</a>
+            </p>
+          </article>
+          <article className={style.formContainer}>
+            <form className={style.form}>
+              <FormInput 
+                placeholder="Nombre de Usuario" 
+                id="username"
+              />
+              <FormInput 
+                placeholder="Contraseña" 
+                id="password"
+              />
+              <Button 
+                text="Continuar" 
+                onClick={() => console.log('Iniciar sesión')}
+              />
             </form>
-        </div>
+          </article>
+        </section>
+        <section className={style.rightContainer}>
+          <img src={image} className={style.rightImage}/>
+        </section>
+      </main>
     )
 }
