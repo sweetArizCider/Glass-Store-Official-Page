@@ -1,0 +1,13 @@
+.sticky{
+  position:fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  transition-duration: 400ms
+}
+
+.sticky:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}

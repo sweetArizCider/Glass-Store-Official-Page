@@ -1,7 +1,9 @@
+import style from './home.module.css';
+import { WhatsApp } from '../../layouts/sticky/WhatsApp';
 export const Home = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+      <>
+        <WhatsApp />
+      </>
     );
 };
